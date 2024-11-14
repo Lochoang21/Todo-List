@@ -1,0 +1,85 @@
+.background {
+    background-image: url('../images/background.jpg'); /* Đường dẫn ảnh của bạn */
+    background-size: cover; /* Để ảnh phủ toàn bộ màn hình */
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh; /* Chiều cao tối thiểu */
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #fff; 
+    margin-bottom: 30px;
+    border-radius: 25px;
+}
+.todoList{
+    width: 80%;
+    max-height: 400px; /* Điều chỉnh chiều cao theo ý bạn */
+    overflow-y: auto;
+}
+.todoContainer {
+    position: sticky;
+    top: 0;
+    width: 80%;
+    margin: 60px 0 25px 0;
+    display: grid;
+    grid-template-columns: 2fr 2fr 5fr  1fr; /* Phân chia tỷ lệ cho từng phần */
+    align-items: center;
+    padding: 10px;
+    border: 5px solid  #d1efff; /* Làm mờ nền */
+    background: linear-gradient(90deg , #3499ff , #6ee2f5   ); /* Làm mờ nền */
+    border-radius: 8px;
+    color: #000000;
+    z-index: 10; 
+}
+.todoContaineritem{
+    display: grid;
+    grid-template-columns: 2fr 2fr 5fr  1fr; /* Phân chia tỷ lệ cho từng phần */
+    gap: 14px; /* Khoảng cách giữa các ô */
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg , #d9f2ff, #b1e4ff  ); /* Làm mờ nền */
+    border-radius: 8px;
+    color: #000000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease; 
+}
+.todoContaineritem:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tăng độ sâu bóng khi hover */
+}
+.timeTodo{
+    color: #349ccf;
+    font-size: 14px;
+}
+.active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.TodoToggle{
+    color: "#000000";
+    margin-left: 10px;
+}
+@media (max-width: 768px) {
+    .todoContainer {
+      display: none;
+    }
+    .todoTitle{
+        display: none;
+    }
+    .timeTodo{
+        display: flex;
+    }
+    .active{
+        
+        display: flex;
+        justify-content: flex-end;
+        margin-right: -35px;
+    }
+    .dropdown-toggle{
+        padding: 3px 6px;   
+    }
+}
