@@ -157,7 +157,7 @@ const AppContent = (props: IProps) => {
                       <Dropdown.Toggle  variant="Secondary" id="dropdown-split-basic" />
                       <Dropdown.Menu>
                         <Dropdown.Item as="div">
-                          <Link className="btn btn-success" href={`/blogs/${item.id}`}>
+                          <Link className="btn btn-success" href={`/todolist/${item.id}`}>
                             <FontAwesomeIcon icon={faCircleInfo} />
                           </Link>
                           <Button variant="warning" className="mx-3"

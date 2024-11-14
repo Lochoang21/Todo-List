@@ -32,7 +32,7 @@ const ViewDetail = ({ params }: { params: { id: string } }) => {
                 </Card.Body>
                
             </Card>
-            <Link className="btn btn-primary mt-3" href={'/todos'}>Back</Link>
+            <Link className="btn btn-primary mt-3" href={'/todolist'}>Back</Link>
         </div>
     )
 }
